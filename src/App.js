@@ -3,10 +3,12 @@ import Navbar from "./components/Navigation/Navbar.js";
 import './App.css';
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
     </div>
   );
+
+
 }
 
 
