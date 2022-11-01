@@ -4,7 +4,7 @@ import React, {useState} from "react"
 export const Register = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
-    const [name,setName] = useState('');
+    const [username,setUsername] = useState('');
 
      //function to capture when users submit form
      const handleSubmit = (e) => {
@@ -17,8 +17,8 @@ export const Register = (props) => {
             
         <form className="register-form" onSubmit={handleSubmit}>
             <h2>Register</h2>
-            <label htmlFor="name">Full name</label>
-            <input value={name} name="name" id="name" placeholder="full Name" />
+            <label htmlFor="username">username</label>
+            <input value={username} name="username" id="username" placeholder="username" />
             <label htmlFor="email">email</label>
             <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
             <label htmlFor="password">password</label>

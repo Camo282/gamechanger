@@ -1,25 +1,21 @@
-import React, {useState} from "react";
+import React, { Component } from 'react';
+import logo from './logo.svg';
 import './App.css';
-import { Login } from './components/Login'; 
-import { Register } from './components/Register'; 
 
-//Login and Register Function
-function App() {
-  const [currentForm, setCurrentForm] = useState('login');
-
-  const toggleForm = (formName) => {
-    setCurrentForm(formName);
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React</h2>
+        </div>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    );
   }
-
-  return (
-    <div className="App">
-      {
-        //ternary operator to check if condition is true and whats displayed
-        currentForm === "login" ?   <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-      }
- 
-    </div>
-  );
 }
 
 export default App;
