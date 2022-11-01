@@ -1,9 +1,12 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import logo from './GameChanger.png';
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">
+        <img src={logo} alt="Logo" />
         GameChanger
       </a>
       <button

@@ -15,7 +15,7 @@ export default App;
 // import './App.css';
 // import { Login } from './components/login'; 
 // import { Register } from './components/register'; 
-// import { Main } from './components/MainBar/mainbar';
+
 
 //Login and Register Function
 // function App() {
