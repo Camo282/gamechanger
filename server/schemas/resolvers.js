@@ -18,25 +18,27 @@ const resolvers = {
     console.log(args)
       return {token, user};
         },
+        // create review
     addReview: async (parent, { args }) => {
       return await Review.create({ args });
     },
+    // update review
     updateReview: async (parent, { args }) => {
       // Find and update the matching class using the destructured args
       return await Review.findOneAndUpdate(
         { _id: id }, 
-        { building },
+        { reviewContent },
         // Return the newly updated object instead of the original
         { new: true }
       );
+      // 
     }
 
   }
 };
 
 // consider what mutations are necessary, figure out typeDefs necessary
-// setup authentication: JWTs working. protect certain routes. game cannot be added without certain user etc.
-// how to incorporate JWT into context of server
+
 
 
 module.exports = resolvers;
