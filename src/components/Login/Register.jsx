@@ -1,4 +1,4 @@
-import "./style.css"
+
 import React, {useState} from "react"
 
 export const Register = (props) => {
@@ -29,3 +29,5 @@ export const Register = (props) => {
     </div>
     )
 }
+
+export default Register;

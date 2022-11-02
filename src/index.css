@@ -5,9 +5,220 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(project-3-background.jpg);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: rgb(227, 255, 227);
+  
+
+}
+
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.login-form {
+  padding: 3rem;
+  border: 1px solid rgb(227, 255, 227);
+  border-radius: 10px;
+}
+
+.register-form {
+  padding: 2rem;
+  border: 1px solid rgb(227, 255, 227);
+  border-radius: 10px;
+}
+
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: rgb(227, 255, 227);
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.link-btn {
+  background: none;
+  color:white;
+  text-decoration: underline;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(227, 255, 227) ;
+  opacity: 70%;
+  
+}
+
+.title {
+  color: black;
+  font-size: 20px;
+}
+
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  color: white;
+  border: .5rem black solid;
+  background-image: url(game-card-example.jpg);
+  margin-bottom: 1rem;
+  
+}
+
+.game-card-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  color: white;
+  border: .5rem black solid;
+  background-image: url(game-card-example-two.jpg);
+  background-size: contain;
+  margin-bottom: 1rem;
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+section .card .image-one{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background-image: url(game-card-example.jpg);
+  background-size: contain;
+}
+section .card .image-two{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background-image: url(game-card-example-two.jpg);
+  background-size: contain;
+}
+
+section .card .image-three{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background-image: url(game-card-example-three.jpg);
+  background-size: contain;
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card .name-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: black;
+} 
+
+.name-game .title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+
+.card .button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card .button button{
+  background: black;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+form.example input[type=text] {
+ 
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 20%;
+  background: rgb(227, 255, 227);
+}
+
+form.example button {
+  
+  display: inline-grid;
+  width: 10%;
+  padding: 10px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+

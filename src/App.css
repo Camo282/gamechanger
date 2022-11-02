@@ -1,6 +1,8 @@
+
+
 .App {
   text-align: center;
-  background-image: url(./components/Login/project-3-background.jpg);
+  background-image: url(project-3-background.jpg);
   background-position: center;
 }
 
@@ -38,3 +40,4 @@
     transform: rotate(360deg);
   }
 }
+
