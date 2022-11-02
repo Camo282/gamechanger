@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from './GameChanger.png';
 
 const Navbar = () => {
@@ -30,12 +30,12 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Library
+                Library
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Sign Up/Login
+            <a className="nav-link">
+              <Link to="/login">Login</Link>
             </a>
           </li>
         </ul>
