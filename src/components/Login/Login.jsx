@@ -37,4 +37,8 @@ export const Login = (props) => {
     )
 }
 
+<<<<<<<< HEAD:src/components/Login/Login.jsx
 export default Login;
+========
+export default handleSubmit;
+>>>>>>>> 245d7684995032673cec718c8574c05f353f3266:src/components/login.jsx
