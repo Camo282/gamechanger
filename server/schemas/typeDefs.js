@@ -22,15 +22,24 @@ const typeDefs = gql`
     CreatedAt: Int
   }
 
+  type Auth {
+    token:ID!
+    user: User
+  }
+
   type Query {
     getUser: User
   }
 
   type Mutation {
-    addUser(username: String!, password: String!) : User
+    addUser(username: String!, password: String!) : Auth
+    login()
+    saveGame(gameTitle, gameData, gameReviews, ID)
   }
 
 `;
 //    addGame(gameTitle: String!, gameData: String!): Game
 module.exports = typeDefs;
 
+// make password work
+// hooks

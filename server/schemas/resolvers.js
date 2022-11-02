@@ -1,4 +1,6 @@
 const User = require('../models/User');
+const Review = require('../models/Review');
+const Game = require('../models/Game');
 const {signToken} = require('../utils/auth.js');
 
 // setup auth and context
@@ -15,9 +17,19 @@ const resolvers = {
     const token = signToken(user);
     console.log(args)
       return {token, user};
-
-      // return await User.create(args);
+        },
+    addReview: async (parent, { args }) => {
+      return await Review.create({ args });
     },
+    updateReview: async (parent, { args }) => {
+      // Find and update the matching class using the destructured args
+      return await Review.findOneAndUpdate(
+        { _id: id }, 
+        { building },
+        // Return the newly updated object instead of the original
+        { new: true }
+      );
+    }
 
   }
 };
